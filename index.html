@@ -8,23 +8,23 @@
   <header>
     <nav>
       <a>
-        <img src="logo.png" alt="Логотип барбершопа «Бородинский»">
+        <img src="img/index-logo.svg" alt="Логотип барбершопа «Бородинский»">
       </a>
       <ul>
         <li>
-          <a href="info.html">Информация</a>
+          <a href="#">Информация</a>
         </li>
         <li>
-          <a href="news.html">Новости</a>
+          <a href="#">Новости</a>
         </li>
         <li>
-          <a href="pricelist.html">Прайс-лист</a>
+          <a href="price.html">Прайс-лист</a>
         </li>
         <li>
           <a href="shop.html">Магазин</a>
         </li>
         <li>
-          <a href="contacts.html">Контакты</a>
+          <a href="#">Контакты</a>
         </li>
       </ul>
       <ul>
@@ -93,7 +93,30 @@
     </section>
     <section>
       <h2>Записаться</h2>
-      <p>Укажите желаемую дату и время и мы свяжемся с вами для подтверждения брони</p>
+      <form action="https://echo.htmlacademy.ru/" method="post">
+        <p>Укажите желаемую дату и время и мы свяжемся с вами для подтверждения брони</p>
+        <div>
+          <label>Дата
+            <input type="date" name="date" placeholder="08.01.2020">
+          </label>
+        </div>
+        <div>
+          <label>Время
+            <input type="time" name="time" placeholder="10:00">
+          </label>
+        </div>
+        <div>
+          <label>Ваше имя
+            <input type="text" name="name" placeholder="Борода">
+          </label>
+        </div>
+        <div>
+          <label>Телефон
+            <input type="text" name="phone" placeholder="+7 123 456-78-90">
+          </label>
+        </div>
+          <input type="submit" value="Записаться">
+      </form>
     </section>
     <form></form>
   </main>
@@ -127,7 +150,17 @@
   </footer>
   <section>
     <h2>Личный кабинет</h2>
-    <p>Введите свой логин и пароль</p>
+    <form action="https://echo.htmlacademy.ru/" method="post">
+      <p>Введите, пожалуйста, свой логин и пароль</p>
+      <input type="text" name="login" placeholder="Логин" aria-label="Логин">
+      <input type="password" name="pass" placeholder="Пароль" aria-label="Пароль">
+      <label>
+        <input type="checkbox" name="remember" checked>
+        Запомните меня
+      </label>
+      <a href="#">Я забыл пароль!</a>
+      <input type="submit" value="Войти">
+    </form>
     <button type="button">Закрыть</button>
   </section>
   <section>
