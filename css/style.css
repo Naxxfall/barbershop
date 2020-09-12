@@ -8,4 +8,90 @@ body{
   line-height: 24px;
   letter-spacing: 0;
   text-transform: uppercase;
+  background-color: #000000;
+  background-image: url("../img/main-background.jpg");
+  text-decoration: none;
+}
+
+a{
+  text-decoration: inherit;
+  color: #FFFFFF;
+}
+
+.visually-hidden{
+  border: 0; 
+  clip: rect(0 0 0 0); 
+  -webkit-clip-path: polygon(0px 0px, 0px 0px, 0px 0px);
+  clip-path: polygon(0px 0px, 0px 0px, 0px 0px);
+  width: 1px;
+  height: 1px; 
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+}
+
+.button{
+  background-color: #000000;
+  color: #FFFFFF;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  line-height: inherit;
+  letter-spacing: inherit;
+  text-transform: inherit;
+  border: none;
+}
+
+.main-menu{
+  background-color: #000000;
+}
+
+.main-menu__list{
+  list-style-type: none;
+}
+
+.advantages{
+  color: #f7f4f1;
+  text-align: center;
+}
+
+.advantages__list{
+  list-style-type: none;
+}
+
+.advantages__name{
+   font-size: 30px;
+  line-height: 42px;
+}
+
+.page-content{
+  color: #000000;
+  background-color: #f8f5f2;
+  background-image: url("../img/content-background.png")
+}
+
+.news__list{
+  list-style-type: none;
+}
+
+.news__date{
+  text-transform: none;
+}
+
+.form-input{
+  background-color: inherit;
+  border-color: #000101;
+  border-width: 2px;
+  border-style: solid;
+}
+
+.main-footer{
+  background-color: #232323;
+  background-image: url("../img/footer-background.png");
+}
+
+.main-footer__maplink{
+  text-decoration: underline;
 }
