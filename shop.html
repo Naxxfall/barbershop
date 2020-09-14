@@ -2,200 +2,205 @@
 <html lang="ru">
 <head>
   <meta charset="utf-8">
-  <title>Барбершоп «Бородинский»</title>
+  <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Барбершоп «Бородинский» | Магазин</title>
 </head>
 <body>
-  <header>
-    <nav>
-      <a href="index.html">
-        <img src="logo.png" alt="Логотип барбершопа «Бородинский»">
+  <header class="main-header">
+    <nav class="main-menu">
+      <a class="main-menu__logo">
+        <img src="img/logo.svg" width="111px" alt="Логотип барбершопа «Бородинский»">
       </a>
-      <ul>
-        <li>
-          <a href="info.html">Информация</a>
+      <ul class="main-menu__list">
+        <li class="main-menu__item">
+          <a href="#">Информация</a>
         </li>
-        <li>
-          <a href="news.html">Новости</a>
+        <li class="main-menu__item">
+          <a href="#">Новости</a>
         </li>
-        <li>
-          <a href="pricelist.html">Прайс-лист</a>
+        <li class="main-menu__item">
+          <a href="price.html">Прайс-лист</a>
         </li>
-        <li>
+        <li class="main-menu__item">
           <a href="shop.html">Магазин</a>
         </li>
-        <li>
-          <a href="contacts.html">Контакты</a>
+        <li class="main-menu__item">
+          <a href="#">Контакты</a>
         </li>
       </ul>
-      <ul>
-        <li>
-          <button type="button">Вход</button>
+      <ul class="main-menu__list main-menu__login">
+        <li class="main-menu__item">
+          <button class="button" type="button">Вход</button>
         </li>
       </ul>
     </nav>
   </header>
-  <main>
-    <h1>Средства для ухода</h1>
-    <ul>
-      <li>
-        <a>Главная</a>
+  <main class="page-content">
+    <h1 class="page-header">Средства для ухода</h1>
+    <ul class="breadcrumbs">
+      <li class="breadcrumbs__item">
+        <a class="breadcrumbs__link">Главная</a>
       </li>
-      <li>
-        <a>Магазин</a>
+      <li class="breadcrumbs__item">
+        <a class="breadcrumbs__link">Магазин</a>
       </li>
-      <li>
+      <li class="breadcrumbs__item breadcrumbs__item--current">
         Средства для ухода
       </li>
     </ul>
-    <section>
-      <h2>Фильтр товаров</h2>
+    <section class="product-filter">
+      <h2 class="visually-hidden">Фильтр товаров</h2>
       <form action="https://echo.htmlacademy.ru/" method="GET">
-        <fieldset>
-          <legend>=Производители:</legend>
-          <ul class="visually-hidden">
-            <li>
+        <fieldset class="product-filter__fieldset">
+          <legend class="product-filter__legend">Производители:</legend>
+          <ul class="product-filter__list">
+            <li class="product-filter__item">
               <label>
-                <input type="checkbox" name="baxter-of-california"> Baxter of California
+                <input class="product-filter__firm" type="checkbox" name="baxter-of-california"> Baxter of California
               </label>
             </li>
-            <li>
+            <li class="product-filter__item">
               <label>
-                <input type="checkbox" name="mr-natty"> Mr Natty
+                <input class="product-filter__firm" type="checkbox" name="mr-natty"> Mr Natty
               </label>
             </li>
-            <li>
+            <li class="product-filter__item">
               <label>
-                <input type="checkbox" name="suavecito"> Suavecito
+                <input class="product-filter__firm" type="checkbox" name="suavecito"> Suavecito
               </label>
             </li>
-            <li>
+            <li class="product-filter__item">
               <label>
-                <input type="checkbox" name="malin+goetz"> Malin+Goetz
+                <input class="product-filter__firm" type="checkbox" name="malin+goetz"> Malin+Goetz
               </label>
             </li>
-            <li>
+            <li class="product-filter__item">
               <label>
-                <input type="checkbox" name="murray's"> Murray's
+                <input class="product-filter__firm" type="checkbox" name="murray's"> Murray's
               </label>
             </li>
-            <li>
+            <li class="product-filter__item">
               <label>
-                <input type="checkbox" name="american-crew"> American Crew
+                <input class="product-filter__firm" type="checkbox" name="american-crew"> American Crew
               </label>
             </li>
           </ul>
         </fieldset>
-        <fieldset>
-          <legend>=Группы товаров:</legend>
-          <ul>
-            <li>
+        <fieldset class="product-filter__fieldset">
+          <legend class="product-filter__legend">Группы товаров:</legend>
+          <ul class="product-filter__list">
+            <li class="product-filter__item">
               <label>
                 <input type="radio" name="products-group" value="shaving"> Бритвенные принадлежности
               </label>
             </li>
-            <li>
+            <li class="product-filter__item">
               <label>
                 <input type="radio" name="products-group" value="hair-care"> Средства для ухода
               </label>
             </li>
-            <li>
+            <li class="product-filter__item">
               <label>
                 <input type="radio" name="products-group" value="accessories"> Аксессуары
               </label>
             </li>
           </ul>
         </fieldset>
-        <input type="submit" value="Показать">
+        <input class="button" type="submit" value="Показать">
       </form>
     </section>
-    <section>
-      <h2>Каталог товаров</h2>
-      <ul>
-        <li>
+    <section class="catalog">
+      <h2 class="section-header">Каталог товаров</h2>
+      <ul class="catalog__list">
+        <li class="catalog__item">
           <div>
             <figure>
               <img src="img/product-small1.jpg" alt="">
-              <figcaption>Набор для путешествий<span>«Baxter of California»</span></figcaption>
+              <figcaption>Набор для путешествий<span class="product-firm">«Baxter of California»</span></figcaption>
             </figure>
-            <p>2900 ₽</p>
-            <button type="button">Купить</button>
+            <p class="product-price">2900 ₽</p>
+            <button class="button" type="button">Купить</button>
           </div>
         </li>
-        <li>
+        <li class="catalog__item">
           <div>
             <figure>
               <img src="img/product4.jpg" alt="">
-              <figcaption>Увлажняющий кондиционер<span>«Baxter of California»</span></figcaption>
+              <figcaption>Увлажняющий кондиционер<span class="product-firm">«Baxter of California»</span></figcaption>
             </figure>
-            <p>750 ₽</p>
-            <button type="button">Купить</button>
+            <p class="product-price">750 ₽</p>
+            <button class="button" type="button">Купить</button>
           </div>
         </li>
-        <li>
+        <li class="catalog__item">
           <div>
             <figure>
               <img src="img/product1.jpg" alt="">
-              <figcaption>Гель для волос<span>«Suavecito»</span></figcaption>
+              <figcaption>Гель для волос<span class="product-firm">«Suavecito»</span></figcaption>
             </figure>
-            <p>290 ₽</p>
-            <button type="button">Купить</button>
+            <p class="product-price">290 ₽</p>
+            <button class="button" type="button">Купить</button>
           </div>
         </li>
-        <li>
+        <li class="catalog__item">
           <div>
             <figure>
               <img src="img/product2.jpg" alt="">
-              <figcaption>Глина для укладки волос<span>«American Crew»</span></figcaption>
+              <figcaption>Глина для укладки волос<span class="product-firm">«American Crew»</span></figcaption>
             </figure>
-            <p>500 ₽</p>
-            <button type="button">Купить</button>
+            <p class="product-price">500 ₽</p>
+            <button class="button" type="button">Купить</button>
           </div>
         </li>
-        <li>
+        <li class="catalog__item">
           <div>
             <figure>
               <img src="img/product3.jpg" alt="">
-              <figcaption>Гель для волос<span>«American Crew»</span></figcaption>
+              <figcaption>Гель для волос<span class="product-firm">«American Crew»</span></figcaption>
             </figure>
-            <p>300 ₽</p>
-            <button type="button">Купить</button>
+            <p class="product-price">300 ₽</p>
+            <button class="button" type="button">Купить</button>
           </div>
         </li>
-        <li>
+        <li class="catalog__item">
           <div>
             <figure>
               <img src="img/product4.jpg" alt="">
-              <figcaption>Набор для бритья<span>«Baxter of California»</span></figcaption>
+              <figcaption>Набор для бритья<span class="product-firm">«Baxter of California»</span></figcaption>
             </figure>
-            <p>3900 ₽</p>
-            <button type="button">Купить</button>
+            <p class="product-price">3900 ₽</p>
+            <button class="button" type="button">Купить</button>
           </div>
         </li>
       </ul>
-      <ul>
-        <li>
-          <a>1</a>
+      <ul class="pagination">
+        <li class="pagination__item">
+          <a class="button pagination__button">1</a>
         </li>
-        <li>
-          <a>2</a>
+        <li class="pagination__item">
+          <a class="button pagination__button--current">2</a>
         </li>
-        <li>
-          <a>3</a>
+        <li class="pagination__item">
+          <a class="button pagination__button">3</a>
         </li>
-        <li>
-          <a>4</a>
+        <li class="pagination__item">
+          <a class="button pagination__button">4</a>
         </li>
       </ul>
     </section>
   </main>
-  <footer>
-    <p>
-      Барбершоп «Бородинский»<br>
-      Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/9<br>
-      <a href="map.html">Как нас найти?</a><br>
-      Телефон: +7 (495) 666-02-66
-    </p>
-    <div>
+  <footer class="main-footer">
+    <div class="main-footer__info">
+      <p>
+        Барбершоп «Бородинский»<br>
+        Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/9<br>
+        <a class="main-footer__maplink" href="map.html">Как нас найти?</a><br>
+        Телефон: +7 (495) 666-02-66
+      </p>
+    </div>
+    <div class="main-footer__socials">
       <p>Давайте дружить!</p>
       <ul>
         <li>
@@ -209,10 +214,10 @@
         </li>
       </ul>
     </div>
-    <div>
+    <div class="main-footer__copyright">
       <p>
         Разработано:<br>
-        <a href="https://htmlacademy.ru">HTML Academy</a>
+        <a class="button" href="https://htmlacademy.ru">HTML Academy</a>
       </p>
     </div>
   </footer>

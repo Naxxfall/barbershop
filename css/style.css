@@ -19,12 +19,12 @@ a{
 }
 
 .visually-hidden{
-  border: 0; 
-  clip: rect(0 0 0 0); 
+  border: 0;
+  clip: rect(0 0 0 0);
   -webkit-clip-path: polygon(0px 0px, 0px 0px, 0px 0px);
   clip-path: polygon(0px 0px, 0px 0px, 0px 0px);
   width: 1px;
-  height: 1px; 
+  height: 1px;
   margin: -1px;
   overflow: hidden;
   padding: 0;
@@ -62,7 +62,7 @@ a{
 }
 
 .advantages__name{
-   font-size: 30px;
+  font-size: 30px;
   line-height: 42px;
 }
 
@@ -94,4 +94,104 @@ a{
 
 .main-footer__maplink{
   text-decoration: underline;
+}
+
+.page-header{
+  font-size: 30px;
+  line-height: 42px;
+}
+
+.about__title{
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.breadcrumbs__link{
+  color:inherit;
+}
+
+.breadcrumbs__item{
+  list-style-type: none;
+}
+
+.breadcrumbs__item--current{
+  color: #aba9a7;
+}
+
+.strong-text{
+  font-size: 48px;
+  line-height: 48px;
+  text-align: center;
+}
+
+.about__list{
+  list-style-type: none;
+}
+
+.price__table{
+  border-collapse: collapse;
+  border-width: 2px;
+  border-style: solid;
+  border-color: #000101;
+  text-align: left;
+}
+
+.price__cost{
+  text-align: center;
+  border-width: 2px;
+  border-style: solid;
+  border-color: #000101;
+}
+
+.price__service{
+  border-width: 2px;
+  border-style: solid;
+  border-color: #000101;
+}
+
+.product-filter__legend{
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.product-filter__list{
+  list-style-type: none;
+}
+
+.catalog-list{
+  list-style-type: none;
+}
+
+.catalog__item{
+  background-color: #ffffff;
+}
+
+.product-price{
+  background-color: #e5e5e5;
+}
+
+.pagination{
+  list-style-type: none;
+}
+
+.pagination__button--current{
+  color: #000000;
+  background-color: #ffffff;
+}
+
+.item-gallery__list{
+  list-style-type: none;
+}
+
+.description__product-id{
+  color: #aeaeae;
+}
+
+.description__strong{
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.description__list{
+  list-style-type: none;
 }
