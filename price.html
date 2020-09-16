@@ -7,78 +7,88 @@
   <link rel="stylesheet" href="css/style.css">
   <title>Барбершоп «Бородинский» | Прайс-лист</title>
 </head>
-<body>
+<body class="body">
   <header class="main-header">
     <nav class="main-menu">
-      <a class="main-menu__logo">
-        <img src="img/logo.svg" width="111px" alt="Логотип барбершопа «Бородинский»">
-      </a>
-      <ul class="main-menu__list">
-        <li class="main-menu__item">
-          <a href="#">Информация</a>
-        </li>
-        <li class="main-menu__item">
-          <a href="#">Новости</a>
-        </li>
-        <li class="main-menu__item">
-          <a href="price.html">Прайс-лист</a>
-        </li>
-        <li class="main-menu__item">
-          <a href="shop.html">Магазин</a>
-        </li>
-        <li class="main-menu__item">
-          <a href="#">Контакты</a>
-        </li>
-      </ul>
-      <ul class="main-menu__list main-menu__login">
-        <li class="main-menu__item">
-          <button class="button" type="button">Вход</button>
-        </li>
-      </ul>
+      <div class="main-navigation-wrapper">
+        <div class="main-navigation-wrapper-row content-wrapper" >
+          <a class="main-menu__logo" href="index.html">
+            <img src="img/logo.svg" width="111px" alt="Логотип барбершопа «Бородинский»">
+          </a>
+          <ul class="main-menu__list">
+            <li class="main-menu__item">
+              <a href="#">Информация</a>
+            </li>
+            <li class="main-menu__item">
+              <a href="#">Новости</a>
+            </li>
+            <li class="main-menu__item">
+              <a href="price.html">Прайс-лист</a>
+            </li>
+            <li class="main-menu__item">
+              <a href="shop.html">Магазин</a>
+            </li>
+            <li class="main-menu__item">
+              <a href="#">Контакты</a>
+            </li>
+          </ul>
+          <ul class="main-menu__list main-menu__login">
+            <li class="main-menu__item">
+              <button class="button" type="button">Вход</button>
+            </li>
+          </ul>
+        </div>
+      </div>
     </nav>
   </header>
-  <main class="price page-content">
-    <h1 class="page-header">Прайс-лист</h1>
-    <ul class="breadcrumbs">
-      <li class="breadcrumbs__item"><a class=breadcrumbs__link href="index.html">Главная</a></li>
-      <li class="breadcrumbs__item breadcrumbs__item--current">Прайс-лист</li>
-    </ul>
-    <strong class="strong-text">Истинно мужская классика</strong>
-    <section class="about">
-      <h3 class="about__title">Мы используем только лучшие средства:</h3>
-      <ul class="about__list">
-        <li>Baxter of California</li>
-        <li>Mr Natty</li>
-        <li>Suavecito</li>
-        <li>Malin+Goetz</li>
+  <main class="price">
+    <div class="page-content">
+      <h1 class="page-header">Прайс-лист</h1>
+      <ul class="breadcrumbs">
+        <li class="breadcrumbs__item"><a class=breadcrumbs__link href="index.html">Главная</a></li>
+        <li class="breadcrumbs__item breadcrumbs__item--current">Прайс-лист</li>
       </ul>
-    </section>
-    <section class="about">
-      <h3 class="about__title">Цены на услуги наших мастеров:</h3>
-      <table class="price__table">
-        <tr>
-          <td class="price__service">Стрижка</td>
-          <td class="price__cost">1500 ₽</td>
-        </tr>
-        <tr>
-          <td class="price__service">Стрижка бороды</td>
-          <td class="price__cost">500 ₽</td>
-        </tr>
-        <tr>
-          <td class="price__service">Накрутка усов</td>
-          <td class="price__cost">350 ₽</td>
-        </tr>
-      </table>
-    </section>
-    <section class="about about--wide">
+      <strong class="strong-text">Истинно мужская классика</strong>
+      <div class="content-wrapper-columns">
+        <section class="about about--1">
+          <h3 class="about__title">Мы используем только лучшие средства:</h3>
+          <ul class="about__list">
+            <li>Baxter of California</li>
+            <li>Mr Natty</li>
+            <li>Suavecito</li>
+            <li>Malin+Goetz</li>
+          </ul>
+        </section>
+        <section class="about about--2">
+          <h3 class="about__title">Цены на услуги<br>наших мастеров:</h3>
+          <table class="price__table">
+            <tr>
+              <td class="price__service">Стрижка</td>
+              <td class="price__cost">1500 ₽</td>
+            </tr>
+            <tr>
+              <td class="price__service">Стрижка бороды</td>
+              <td class="price__cost">500 ₽</td>
+            </tr>
+            <tr>
+              <td class="price__service">Накрутка усов</td>
+              <td class="price__cost">350 ₽</td>
+            </tr>
+          </table>
+        </section>
+      </div>
       <h3 class="about__title">Несколько слов о нас:</h3>
-      <div class="about__column">
-        <p>Наша парикмахерская занимается исключительно мужскими стрижками. Стрижка каждого клиента для нас — это уникальная и продуманная до мелочей работа. Мы не работаем на количество, мы делаем качество.</p>
+      <div class="content-wrapper-columns">
+        <div class="about about--3">
+          <p>Наша парикмахерская занимается исключительно мужскими стрижками. Стрижка каждого клиента для нас — это уникальная и продуманная до мелочей работа. Мы не работаем на количество, мы делаем качество.</p>
+        </div>
+        <div class="about about--4">
+          <p>Наша мастерская расположена в центре города, поэтому сделать стильную стрижку можно в любое время, даже в обеденный перерыв. Здесь вы можете погрузиться в удобную для вас атмосферу, чувствовать себя комфортно и свободно!</p>
+        </div>
       </div>
-      <div class="about__column">
-        <p>Наша мастерская расположена в центре города, поэтому сделать стильную стрижку можно в любое время, даже в обеденный перерыв. Здесь вы можете погрузиться в удобную для вас атмосферу, чувствовать себя комфортно и свободно!</p>
-      </div>
-    </section>
+    </div>
+
+
   </main>
     <footer class="main-footer">
       <div class="main-footer__info">

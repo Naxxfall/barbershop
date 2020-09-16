@@ -7,38 +7,42 @@
   <link rel="stylesheet" href="css/style.css">
   <title>Барбершоп «Бородинский» | Набор для путешествий «BAXTER OF CALIFORNIA»</title>
 </head>
-<body>
+<body class="body">
   <header class="main-header">
     <nav class="main-menu">
-      <a class="main-menu__logo">
-        <img src="img/logo.svg" width="111px" alt="Логотип барбершопа «Бородинский»">
-      </a>
-      <ul class="main-menu__list">
-        <li class="main-menu__item">
-          <a href="#">Информация</a>
-        </li>
-        <li class="main-menu__item">
-          <a href="#">Новости</a>
-        </li>
-        <li class="main-menu__item">
-          <a href="price.html">Прайс-лист</a>
-        </li>
-        <li class="main-menu__item">
-          <a href="shop.html">Магазин</a>
-        </li>
-        <li class="main-menu__item">
-          <a href="#">Контакты</a>
-        </li>
-      </ul>
-      <ul class="main-menu__list main-menu__login">
-        <li class="main-menu__item">
-          <button class="button" type="button">Вход</button>
-        </li>
-      </ul>
+      <div class="main-navigation-wrapper">
+        <div class="main-navigation-wrapper-row content-wrapper" >
+          <a class="main-menu__logo" href="index.html">
+            <img src="img/logo.svg" width="111px" alt="Логотип барбершопа «Бородинский»">
+          </a>
+          <ul class="main-menu__list">
+            <li class="main-menu__item">
+              <a href="#">Информация</a>
+            </li>
+            <li class="main-menu__item">
+              <a href="#">Новости</a>
+            </li>
+            <li class="main-menu__item">
+              <a href="price.html">Прайс-лист</a>
+            </li>
+            <li class="main-menu__item">
+              <a href="shop.html">Магазин</a>
+            </li>
+            <li class="main-menu__item">
+              <a href="#">Контакты</a>
+            </li>
+          </ul>
+          <ul class="main-menu__list main-menu__login">
+            <li class="main-menu__item">
+              <button class="button" type="button">Вход</button>
+            </li>
+          </ul>
+        </div>
+      </div>
     </nav>
   </header>
   <main class="page-content">
-    <h1 class="page-header">Набор для путешествий «BAXTER OF CALIFORNIA»</h1>
+    <h1 class="page-header visually-hidden">Набор для путешествий «BAXTER OF CALIFORNIA»</h1>
     <ul class="breadcrumbs">
       <li class="breadcrumbs__item">
         <a class="breadcrumbs__link" href="index.html">Главная</a>
@@ -53,6 +57,7 @@
         Набор для путешествий «BAXTER OF CALIFORNIA»
       </li>
     </ul>
+    <div class="content-wrapper-columns">
       <section class="item-gallery">
         <h2 class="visually-hidden">Изображения товара</h2>
         <img class="item-gallery__photo item-gallery__photo--big" src="img/product-big.jpg" width=460px alt="Фото набора в анфас">
@@ -64,11 +69,17 @@
       </section>
       <section class="description">
         <h2 class="visually-hidden">Описание товара</h2>
-        <p class="description__availability">Есть в наличии</p>
-        <p class="description__product-id">Артикул: DEXTER-AE</p>
+        <div class="description__wrapper">
+          <p class="description__availability">Есть в наличии</p>
+          <p class="description__product-id">Артикул: DEXTER-AE</p>
+        </div>
         <p class="description__text">Travel Kit — необходимый аксессуар во время любого путешествия. В аккуратной кожаной сумке находится все, что нужно для бритья и ухода за кожей во время рабочей поездки или отдыха: сдедство для умывания, увлажняющий крем, крем для бритья, крем после бритья, шампунь. Набор также может стать отличным подарком.</p>
-        <b class="description__price product-price">2900 ₽</b>
-        <button class="button" type="button">Купить</button>
+        <div class="price-wrapper">
+          <div class="product-price">
+            <span>2900 ₽</span>
+          </div>
+          <button class="button button-buy" type="button">Купить</button>
+        </div>
         <strong class="description__strong">В набор входят:</strong>
         <ul class="description__list">
           <li class="description__item">средство для умывания (50 мл)</li>
@@ -79,7 +90,8 @@
           <li class="description__item">удобная кожаная косметичка</li>
         </ul>
       </section>
-    </main>
+    </div>
+  </main>
   <footer class="main-footer">
     <div class="main-footer__info">
       <p>
