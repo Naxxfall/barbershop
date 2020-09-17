@@ -37,30 +37,69 @@ a{
 }
 
 .button{
-  display:block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 43px;
   background-color: #000000;
-  color: #FFFFFF;
   font-family: inherit;
-  font-size: inherit;
   font-weight: inherit;
-  line-height: inherit;
-  letter-spacing: inherit;
   text-transform: inherit;
+  color: #FFFFFF;
+  font-size: 14px;
+  line-height: 24px;
   border: none;
 }
 
 .main-menu__list{
+  height: 73px;
   width: 640px;
   list-style-type: none;
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: center;
   margin: 0;
   padding:0;
 }
 
+.main-menu__link{
+  display: block;
+  padding: 25px 20px;
+}
+
+.main-menu__link:focus,
+.main-menu__link:hover,
+.main-menu__link:active{
+  background-color: #242424;
+}
+
 .main-menu__login{
   width: 140px;
+}
+
+.button--login{
+  height: 73px;
+  width: 107px;
+  position: relative;
+  padding-left: 53px;
+}
+
+.button--login::before{
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 18px;
+  top: 29px;
+  right: 70px;
+  background-image: url("../img/login.svg");
+  opacity: 0.3;
+}
+
+.button--login:focus::before,
+.button--login:hover::before,
+.button--login:active::before{
+  opacity: 1;
 }
 
 .advantages{
@@ -327,7 +366,6 @@ a{
 .main-menu-wrapper{
   display: flex;
   flex-direction: column;
-  flex-wrap: nowrap;
   align-items: center;
 }
 
@@ -338,7 +376,6 @@ a{
 }
 
 .main-navigation-wrapper-row{
-  height: 73px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
