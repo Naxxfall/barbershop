@@ -41,6 +41,7 @@ a{
   justify-content: center;
   align-items: center;
   height: 43px;
+  width: 140px;
   background-color: #000000;
   font-family: inherit;
   font-weight: inherit;
@@ -110,6 +111,10 @@ a{
 
 .advantages__list{
   list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .main-menu__logo{
@@ -119,8 +124,19 @@ a{
 }
 
 .advantages__name{
+  display: block;
   font-size: 30px;
   line-height: 42px;
+  margin-bottom: 15px;
+}
+
+.diamond{
+  width: 22px;
+  height: 22px;
+  background-color: #f7f4f1;
+  transform: rotate(45deg);
+  align-self: center;
+  margin-bottom: 20px;
 }
 
 .page-content{
@@ -138,15 +154,16 @@ a{
   margin:0;
 }
 
-.news__date{
-  text-transform: none;
+.news__item{
+  margin-bottom: 30px;
 }
 
-.form-input{
-  background-color: inherit;
-  border-color: #000101;
-  border-width: 2px;
-  border-style: solid;
+.news__text{
+  margin: 0;
+}
+
+.news__date{
+  text-transform: none;
 }
 
 .main-footer{
@@ -384,6 +401,7 @@ a{
 
 .main-menu__logo_index{
   order: 1;
+  margin-bottom: 80px;
 }
 
 .content-wrapper{
@@ -403,7 +421,12 @@ a{
 }
 
 .advantages__item{
-   width: 300px;
+  width: 300px;
+  display:flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
 .content-wrapper-columns{
@@ -434,6 +457,8 @@ a{
 .section-header{
   font-size: 30px;
   line-height: 42px;
+  margin-top:0;
+  margin-bottom: 25px;
 }
 
 .main-footer-wrapper{
@@ -478,4 +503,85 @@ a{
   padding: 0;
   width: 70px;
   height: 100%;
+}
+
+.content-wrapper-columns--index{
+  margin-bottom: 36px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-image: url("../img/border_index.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.photo-wrapper{
+  width: 286px;
+  height: 178px;
+  background-color: #ffffff;
+  padding: 7px;
+  margin-bottom: 40px;
+}
+
+.gallery__photo{
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.button-wrapper{
+  width: 300px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.order__wrapper{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.order__label{
+  display: block;
+  margin-left: 16px;
+  margin-bottom: 12px;
+}
+
+.form-input{
+  box-sizing: border-box;
+  background-color: inherit;
+  font-family: inherit;
+  font-weight: inherit;
+  font-size: 14px;
+  line-height: 24px;
+  border-color: #000101;
+  border-width: 2px;
+  border-style: solid;
+  width: 140px;
+  height: 43px;
+  padding-left:15px;
+  margin-bottom: 16px;
+}
+
+.order__button{
+  width: 100%;
+}
+
+.socials__list{
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display:flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+}
+
+.socials__button{
+  width: 43px;
+  height: 43px;
+  display:flex;
+  justify-content: center;
+  align-items: center;
 }
