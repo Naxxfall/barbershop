@@ -235,29 +235,38 @@ a{
 }
 
 .strong-text-wrapper{
-  box-sizing: border-box;
-  width: auto;
-  height: 50px;
-  position: relative;
-  padding-top: 24px;
-  margin-bottom: 70px;
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 64px;
 }
 
-.strong-text-hr{
-  height: 2px;
-  border-style: none;
-  background: #000101;
-}
 .strong-text{
-  position: absolute;
-  left: 170px;
-  bottom: -5px;
-  display: block;
+  width:100%;
+  display:flex;
+  justify-content: center;
+  align-items: center;
   font-size: 48px;
   line-height: 48px;
-  padding-left: 26px;
-  padding-right: 26px;
-  background-image: url("../img/content-background.png");
+}
+
+.strong-text::before,
+.strong-text::after{
+  content: "";
+  display:flex;
+  height: 2px;
+  background-color: #000101;
+  flex-grow: 1;
+  flex-shrink: 0;
+}
+
+.strong-text::before{
+  margin-right: 26px; 
+}
+
+.strong-text::after{
+  margin-left: 26px; 
 }
 
 .about__list{
@@ -303,6 +312,9 @@ a{
 
 .product-filter__list{
   list-style-type: none;
+  margin:0;
+  padding:0;
+  
 }
 
 .catalog__list{
@@ -732,4 +744,53 @@ a{
 }
 .product-filter__fieldset {
   border: none;
+}
+
+.checkbox {
+  position: relative;
+  padding-left: 30px;
+  cursor: pointer;
+}
+
+.checkbox:hover{
+  color: #663d15;
+}
+
+.checkbox__indicator {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width:17px;
+  height:17px;
+  border: 2px solid #000101;
+  background-color: #f9f5f3;
+}
+
+.checkbox__hidden:focus + .checkbox__indicator{
+  border-color: #663d15;
+  outline: thin dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+}
+
+.checkbox__hidden:checked + .checkbox__indicator::before,
+.checkbox__hidden:checked + .checkbox__indicator::after{
+  position: absolute;
+  top:8px;
+  left:1px;
+  content: "";
+  width: 15px;
+  height: 2px;
+  background-color: #000101;
+}
+
+.checkbox__hidden:checked + .checkbox__indicator::before{
+  transform: rotate(45deg);
+}
+
+.checkbox__hidden:checked + .checkbox__indicator::after{
+  transform: rotate(-45deg);
+}
+.product-filter__item {
+  margin-top: 24px;
+  margin-bottom: 24px;
 }
