@@ -1,15 +1,24 @@
 var modalLogin=document.querySelector(".login-page");
 var loginButton=document.querySelector(".button--login");
-var closeButton=modalLogin.querySelector(".close-button");
+var loginCloseButton=modalLogin.querySelector(".login-page__close");
 var loginForm=modalLogin.querySelector(".login-page__form");
 var loginField=loginForm.querySelector(".login-page__input--login");
 var passwordField=loginForm.querySelector(".login-page__input--password");
 var isStorageSupport=true;
 var login="";
+var modalMap=document.querySelector(".map-page");
+var showMapButton=document.querySelectorAll(".map-link");
+var mapCloseButton=modalMap.querySelector(".map-page__close");
+var blocker=document.querySelector(".blocker");
 
-function closeModal(modal){
+function showModal(modal, blocker){
+  modal.classList.add("modal-show");
+  blocker.classList.add("blocker-show");
+}
+
+function closeModal(modal, blocker){
   modal.classList.remove("modal-show");
-  modal.classList.remove("modal-error");
+  blocker.classList.remove("blocker-show");
 }
 
 try{
@@ -20,7 +29,7 @@ try{
 
 loginButton.addEventListener("click", function (evt) {
   evt.preventDefault();
-  modalLogin.classList.add("modal-show");
+  showModal(modalLogin, blocker);
   if (isStorageSupport){
     if(login) {
       loginField.value = login;
@@ -46,16 +55,31 @@ loginForm.addEventListener("submit", function (evt) {
   }
 });
 
-closeButton.addEventListener("click", function (evt) {
+loginCloseButton.addEventListener("click", function (evt) {
   evt.preventDefault();
-  closeModal(modalLogin);
+  closeModal(modalLogin, blocker);
+  modalLogin.classList.remove("modal-error");
 });
 
 window.addEventListener("keydown", function(evt) {
   if (evt.key === "Escape"){
     if (modalLogin.classList.contains("modal-show")){
-      evt.preventDefault();
-      closeModal(modalLogin);
+      loginCloseButton.dispatchEvent(new MouseEvent("click"));
+    }
+    if (modalMap.classList.contains("modal-show")){
+      mapCloseButton.dispatchEvent(new MouseEvent("click"));
     }
   }
+});
+
+showMapButton.forEach(function (mapButton) {
+  mapButton.addEventListener("click", function (evt) {
+    evt.preventDefault();
+    showModal(modalMap, blocker);
+  });
+});
+
+mapCloseButton.addEventListener("click", function (evt) {
+  evt.preventDefault();
+  closeModal(modalMap, blocker);
 });

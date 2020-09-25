@@ -5,6 +5,7 @@
   <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
+  <script defer src="js/modal.js"></script>
   <title>Барбершоп «Бородинский» | Прайс-лист</title>
 </head>
 <body class="body">
@@ -34,7 +35,7 @@
           </ul>
           <ul class="main-menu__list main-menu__login">
             <li class="main-menu__item">
-              <button class="button main-menu__link button--login" type="button">Вход</button>
+              <a class="main-menu__link button--login" href="login.html">Вход</a>
             </li>
           </ul>
         </div>
@@ -111,7 +112,7 @@
         <p>
           Барбершоп «Бородинский»<br>
           Адрес: г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
-          <a class="inline-link" href="map.html">Как нас найти?</a><br>
+          <a class="inline-link map-link" href="map.html">Как нас найти?</a><br>
           Телефон: +7 (495) 666-02-66
         </p>
       </div>
@@ -145,7 +146,7 @@
     </div>
   </footer>
   <section class="modal login-page">
-    <button class="close-button" type="button">
+    <button class="close-button login-page__close" type="button">
       <span class="visually-hidden">Закрыть окно авторизации</span>
     </button>
     <h2 class=section-header>Личный кабинет</h2>
@@ -165,7 +166,7 @@
     </form>
   </section>
   <section class="modal map-page">
-    <button class="close-button" type="button">
+    <button class="close-button map-page__close" type="button">
       <span class="visually-hidden">Закрыть карту</span>
     </button>
     <h2 class="visually-hidden">Как до нас добраться</h2>
@@ -173,5 +174,6 @@
       <img class="yandex-map-image" alt="Адрес: г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8" width="600px" height="450px" src="https://static-maps.yandex.ru/1.x/?ll=30.323118,59.938635&spn=0.000457,0.00119&l=map&pt=30.323118,59.938635,pm2rdl">
     </div>
   </section>
+  <div class="blocker"></div>
 </body>
 </html>

@@ -843,6 +843,7 @@ a{
   display: none;
   box-sizing: border-box;
   position: fixed;
+  z-index: 10;
   background-color: #f9f5f3;
   background-image: url("../img/content-background.png");
   color: black;
@@ -860,12 +861,28 @@ a{
   animation-duration: 0.6s;
 }
 
+.blocker{
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  height: 100%;
+  width: 100%;
+  background-color: #000000;
+  opacity: 0.7;
+}
+
+.blocker-show{
+  display: block;
+}
+
 .close-button{
   width: 22px;
   height: 22px;
   position:absolute;
-  top:0;
-  right:0;
+  top:-5px;
+  right:-30px;
   background-color: transparent;
   border: none;
   cursor: pointer;
@@ -873,7 +890,7 @@ a{
 
 .close-button:hover:before,
 .close-button:hover:after{
-  background-color: #653d15;
+  background-color: #000101;
 }
 
 .close-button:after,
@@ -885,7 +902,7 @@ a{
   content: "";
   width: 15px;
   height: 3px;
-  background-color: #000101;
+  background-color: #ffffff;
 }
 
 .close-button:after{
